@@ -86,19 +86,6 @@
     background: #5c86b5;
 }
 
-/* Safelink Theme Dark Mode CSS */
-
-.drK .safelink{
-    background: #2a2c2f;
-    color: var(--darkTa);
-}
-
-.drK .popup{
-    background: #2a2c2f;
-    color: var(--darkTa);
-    border-radius: 8px;
-}
-
 /* Generate Page CSS */
 
 .safelink-container {
@@ -208,9 +195,22 @@
 
 }
 
+/* Safelink Theme Dark Mode CSS */
+
+.drK .safelink {
+    background: #2a2c2f;
+    color: var(--darkTa);
+}
+
+.drK .popup {
+    background: #2a2c2f;
+    color: var(--darkTa);
+    border-radius: 8px;
+}
+
 /* Generate Page Dark Mode CSS */
 
-.drK .safelink-container{
+.drK .safelink-container {
     background-color: #2a2c2f;
     color: #ccc4c4;
     border-color: #333333;
@@ -219,5 +219,3 @@
 .drK .safelink-container #safelink-svg circle {
     fill: #8775f5;
 }
-
-/* --- End --- */
