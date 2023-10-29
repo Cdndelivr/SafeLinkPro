@@ -219,3 +219,7 @@
 .drK .safelink-container #safelink-svg circle {
     fill: #8775f5;
 }
+
+.sponsored-text {
+  font-size: x-small;
+}
