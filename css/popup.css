@@ -200,3 +200,7 @@ button.close {
 	-ms-flex-pack: center !important;
 	justify-content: center !important
 }
+
+.drk .close{
+	color: #fff;
+}
